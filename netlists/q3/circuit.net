@@ -1,0 +1,20 @@
+* Circuit - Push-Pull
+* Course: Circuitos Eletrônicos I - Prova Final
+
+* 1. Voltage sources
+V1 in 0 0
+V2 cc 0 5
+V3 ee 0 -5
+
+* 2. Components
+Q1 cc N001 N002 NPN_PROVA
+Q2 ee N001 N002 PNP_PROVA
+
+R1 N001 in 10k
+R2 0 N002 1k
+
+* 3. Transistor Model Definitions (approx. 0.7V forward drop)
+.model NPN_PROVA NPN(IS=1e-16 BF=100 VAF=100 IKF=1e9)
+.model PNP_PROVA PNP(IS=1e-16 BF=100 VAF=100 IKF=1e9)
+
+.end
