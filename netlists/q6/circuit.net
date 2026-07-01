@@ -1,0 +1,27 @@
+* Circuit - Base comum com espelho de corrente 
+* Course: Circuitos Eletrônicos I - Prova Final
+
+* Fontes
+V1 in 0 SIN(0 1m 1k)
+V2 cc 0 5
+
+* Transistores
+Q1 out N001 N003 NPN_PROVA
+Q2 N003 N004 0 NPN_PROVA
+Q3 N004 N004 0 NPN_PROVA
+Q4 N004 N004 0 NPN_PROVA
+
+* Resistores
+RC out cc 2k
+RB1 N001 0 2k
+RB2 N001 cc 3k
+RB3 N004 cc 4.7k
+RS N002 in 50
+
+* Capacitores
+CB N001 0 10u
+CC N003 N002 10u
+
+.model NPN_PROVA NPN(IS=2e-15 BF=100 VAF=100 IKF=1e9)
+
+.end
