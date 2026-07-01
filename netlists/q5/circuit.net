@@ -1,0 +1,24 @@
+* Circuit - Amplificador Emissor Comum
+* Course: Circuitos Eletrônicos I - Prova Final
+
+* Fontes
+V1 in 0 SIN(0 5m 1k)
+V2 cc 0 6
+
+* Transistor
+Q1 out N001 N002 NPN_PROVA
+
+* Resistores
+RC out cc 517.65
+RE N002 0 1.6k
+RB1 N001 0 4k
+RB2 N001 cc 2k
+
+* Capacitores
+CE N002 0 220u
+CB N001 in 1u
+
+* Modelo do transistor
+.model NPN_PROVA NPN(IS=2e-13 BF=160 VAF=100 IKF=1e9)
+
+.end

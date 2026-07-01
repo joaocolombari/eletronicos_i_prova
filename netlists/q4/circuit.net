@@ -1,0 +1,26 @@
+* Circuit - Emissor Comum
+* Course: Circuitos Eletrônicos I - Prova Final
+
+* Fontes
+V1 in 0 SIN(0 1m 1k)
+V2 cc 0 6
+
+* Transistor
+Q1 N001 N002 N003 NPN_PROVA
+
+* Resistores
+RC N001 cc 913
+RL out 0 1k
+RE N003 0 593.61
+RB1 N002 0 9.14k
+RB2 N002 cc 16.63k
+
+* Capacitores
+CE N003 0 220u
+CB N002 in 1u
+CC out N001 1000u
+
+* Modelo do transistor
+.model NPN_PROVA NPN(IS=3.5e-15 BF=100 VAF=100 IKF=1e9)
+
+.end
