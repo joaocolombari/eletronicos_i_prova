@@ -1,0 +1,20 @@
+* Circuit - Seguidor de Emissor
+* Course: Circuitos Eletrônicos I - Prova Final
+
+* Fontes
+V1 in 0 0
+V2 cc 0 5
+
+* Transistores
+Q1 cc in out NPN_PROVA
+Q2 out N001 0 NPN_PROVA
+Q3 N001 N001 0 NPN_PROVA
+
+* Resistores
+RB N001 cc 16.634k
+RL out cc 10Meg
+
+* Modelo do transistor
+.model NPN_PROVA NPN(IS=3e-16 BF=100 VAF=100 IKF=1e9)
+
+.end
